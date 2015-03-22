@@ -29,7 +29,7 @@ div.warn {
         <!-- Code syntax highlighting -->
         <link rel="stylesheet" href="lib/css/zenburn.css">
         
-        <link rel="stylesheet" href="../../../presentable/src/presentable.css">
+        <link rel="stylesheet" href="../presentable/src/presentable.css">
 
         <!-- Printing and PDF exports -->
         <script>
@@ -53,8 +53,8 @@ div.warn {
                         position: absolute;
                         bottom: 20px;
                         left: 40px;
-                        width: 66px;
-                        height: 100px;">
+                        width: 48px;
+                        height: 60px;">
     </div>
     
     <div id="caption" style="position: absolute;
@@ -184,7 +184,7 @@ div.warn {
                     { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
                     { src: 'plugin/zoom-js/zoom.js', async: true },
                     { src: 'plugin/notes/notes.js', async: true }, 
-                    { src: '../../../presentable/dist/presentable.min.js', async: true, callback: function() { presentable.toc({framework: "revealjs", hideNoTitle: true, titles: ".presentable-title"}); } }
+                    { src: '../presentable/dist/presentable.min.js', async: true, callback: function() { presentable.toc({framework: "revealjs", hideNoTitle: true, titles: ".presentable-title"}); } }
                 ]
             });
 
