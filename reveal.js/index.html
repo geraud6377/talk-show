@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<style>
+div.warn {    
+    background-color: #fcf2f2;
+    border-color: #dFb5b4;
+    border-left: 5px solid #dfb5b4;
+    padding: 0.5em;
+    }
+
+</style>
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Nouvelle étude MOSAICS</title>
+
+        <meta name="description" content="Notes">
+        <meta name="author" content="Géraud Blatman">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/edf.css" id="theme">
+
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        
+        <link rel="stylesheet" href="../presentable/src/presentable.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+        
+<!--        Mathjax-->
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- CSS goes in the document HEAD or added to your external stylesheet -->
+<style type="text/css">
+table.gridtable {
+    font-family: Lato;
+    font-size:19px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+}
+table.gridtable th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #dedede;
+    text-align: center;
+}
+table.gridtable td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #ffffff;
+    text-align: center;
+}
+</style>
+
+
+    </head>
+
+    <body>
+
+    <div id="myLogo" style="background: url(projects/template_EDF/EDF_small.jpg);
+                        position: absolute;
+                        bottom: 20px;
+                        left: 40px;
+                        width: 48px;
+                        height: 60px;">
+    </div>
+    
+    <div id="caption" style="position: absolute;
+                             font-family: 'Lato', sans-serif;
+                             font-size: 22px;
+                             font-weight: normal;
+                             bottom: 30px;
+                             left: 35%;">
+        G. Blatman (MMC/T24) - Nouvelle étude MOSAICS
+    
+    </div>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                
+                <section>
+
+                    <h1>ANR MOSAICS - Analyse de sensibilité</h1>
+
+                </section>
+
+
+                <section>
+
+                    <h2 style="margin-bottom: 1em;">Valeurs mesurées des \(C_{ij}\) en GPa</h2>
+
+                    <table class="gridtable">
+                    <thead>
+                    <tr>
+                    <th>Convention P. Guy</th> <th>\(C_{11}\)</th> <th>\(C_{22}\)</th> <th>\(C_{33}\)</th> <th>\(C_{23}\)</th> <th>\(C_{13}\)</th> <th>\(C_{12}\)</th> <th>\(C_{44}\)</th> <th>\(C_{55}\)</th> <th>\(C_{66}\)</th> </tr>
+                        </thead>
+                    <tr>
+                    <td>0°</td> <td>217</td> <td>257</td> <td>239</td> <td>134</td> <td>145</td> <td>154</td> <td>63</td> <td>108</td> <td>112</td> </tr>
+                    <tr>
+                    <td>15°</td> <td>221</td> <td>254</td> <td>239</td> <td>123</td> <td>144</td> <td>151</td> <td>54</td> <td>108</td> <td>110</td> </tr>
+                    <tr>
+                    <td>30°</td> <td>236</td> <td>257</td> <td>239</td> <td>129</td> <td>134</td> <td>140</td> <td>68</td> <td>108</td> <td>112</td> </tr>
+                    <tr>
+                    <td>45°</td> <td>235</td> <td>257</td> <td>240</td> <td>130</td> <td>134</td> <td>140</td> <td>68</td> <td>108</td> <td>113</td> </tr>
+                    <!--<tr>
+                    <td>60°</td> <td>235</td> <td>256</td> <td>283</td> <td>133</td> <td>153</td> <td>140</td> <td>62</td> <td>130</td> <td>110</td> </tr>
+                    <tr>-->
+                    <td>75°</td> <td>236</td> <td>258</td> <td>230</td> <td>134</td> <td>146</td> <td>140</td> <td>69</td> <td>98</td> <td>110</td> </tr>
+                    <tr>
+                    <td>90°</td> <td>236</td> <td>258</td> <td>230</td> <td>135</td> <td>144</td> <td>140</td> <td>69</td> <td>110</td> <td>110</td> </tr>
+                    <tr>
+                    <th>Usage dans Athena</th><th>\(C_{33}\)</th><th colspan="2">\(C_{11}\)</th><th>-</th><th colspan="2">\(C_{13}\)</th><th>-</th><th colspan="2">\(C_{55}\)</th>
+                    </tr>
+                    </table>
+
+                    <p style="margin-top: 1.5em; margin-bottom: 1.0em">
+                    Il faut vérifier :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    \(C_{55}  <   C_{13}  <   C_{33}  <  C_{11}\)
+                    </p>
+                    <p style="color:#700000 ">ATTENTION : &nbsp;&nbsp;&nbsp;\(C_{33}  >  C_{11}\)&nbsp; pour 75° et 90°</p>
+
+                </section>
+
+            </div>
+
+        </div>
+
+        <aside id="presentable-icon" class="revealjs">
+        <a title="Table of Contents" href="#/0/1">
+<!--         <img alt="Table of Contents" src="../../../presentable/src/icons/revealjs.png"/> -->
+        </a>
+        </aside>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+                slideNumber: true,
+                previewLinks: false,
+
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/notes/notes.js', async: true }, 
+                    { src: '../presentable/dist/presentable.min.js', async: true, callback: function() { presentable.toc({framework: "revealjs", hideNoTitle: true, titles: ".presentable-title"}); } }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>

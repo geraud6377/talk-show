@@ -44,13 +44,13 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 3.77em; }
+  font-size: 2.2em; }
 
 .reveal h2 {
-  font-size: 2.11em; }
+  font-size: 1.5em; }
 
 .reveal h3 {
-  font-size: 1.55em; }
+  font-size: 1.25em; }
 
 .reveal h4 {
   font-size: 1em; }
@@ -62,6 +62,7 @@ body {
  * OTHER
  *********************************************/
 .reveal p {
+  font-size: 0.85em;
   margin: 20px 0;
   line-height: 1.3; }
 
